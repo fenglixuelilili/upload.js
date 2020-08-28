@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Document
+    script(src='/upload.js')
+    script(src='/my.js')
+    style.
+      #speed{
+      /* display: none; */
+      }
+  body
+    div
+      input#file.file(type='file')
+      #speed
+        .progress
+          progress(value='0', max='100')
+          span 0%
+        .speed
+          span 速度
+          span 0kb/s
+      button#stop 停止传输

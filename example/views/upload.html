@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/upload.js"></script>
+    <script src="/my.js"></script>
+</head>
+<style>
+    #speed{
+        /* display: none; */
+    }
+</style>
+<body>
+    <div>
+        <input type="file" id='file' class="file">
+       <div id="speed">
+            <div class="progress">
+                <progress value='0' max='100'></progress>
+                <span>0%</span>
+            </div>
+            <div class="speed">
+                <span>速度</span>
+                <span>0kb/s</span>
+            </div>
+       </div>
+       <button id='stop'>停止传输</button>
+    </div>
+</body>
+</html>
